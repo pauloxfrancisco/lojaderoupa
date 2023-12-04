@@ -3,22 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Página principal</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<!--HEADER-->
+
 <body>
     <header>
-        <div class="top">
-            <h2>C&MM</h2>
-            <div class="search">
-                <input type="text" placeholder="O que você procura?">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="top-menu">
+            <div class="logo">
+                <h1>C&MM</h1>
+            </div>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="O que você procura?">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
             </div>
 
@@ -26,48 +25,167 @@
                 <i class="fa-solid fa-headset"></i>
                 <p>Atendimento</p>
             </div>
+            <!-- botão do WhatsApp -->
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <div class="wpp">
 
-            <div class="whats">
-                <i class="fa-brands fa-whatsapp"></i>
                 <p>Compre pelo Whatsapp</p>
-            </div>
 
+            </div>
             <div class="welcome">
-                <p> Bem-vindo a C&MM</p>
+                <p>Bem vindo a C&MM</p>
+                <!-- botão de usuário (login/registrar) -->
                 <i class="fa-regular fa-circle-user"></i>
+            </div>
+            <div class="right-btns">
+                <!-- botão de "coração"/like -->
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-solid fa-bag-shopping"></i>
+
             </div>
         </div>
-        <!--NAVBAR-->
-        <nav>
-            <div class="loc">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <form action=""><input type="text"placeholder="Digite seu CEP"></form>
-            </div>
-            <div class="nav-container">
-                <div class="menu">
-                    <ul>
-                        <li>Feminino</li>
-                        <li>Masculino</li>
-                        <li>Infantil</li>
-                        <li class="red-list">OUTLET</li>
-                    </ul>
-                </div>
-            </div>
-            <!--sub-menu-->
-          <section class="sub-menu">
-            <div class="notice">
-                <i class="fa-solid fa-truck-fast"></i>
-                <h3>FRETE GRÁTIS*</h3>
-                <p>Compras acima de R$250,00</p>
-            </div>
-          </section>
 
+       <!--  menu principal  -->
+        <div class="pin-container">
+            <form>
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" name="cep" placeholder="Digite seu CEP">
+                
+            </form>
+
+        </div>
+        <nav class="nav-container">
+
+            <div class="menu">
+
+                <ul>
+                    <li>Feminino</li>
+                    <li>Masculino</li>
+                    <li>Infantil</li>
+                    <li class="redList">Outlet</li>
+                </ul>
+
+            </div>
             </div>
         </nav>
     </header>
-    <script src="https://kit.fontawesome.com/1fda0a70f1.js" crossorigin="anonymous"></script>
+    <main>
+        <section>
+            <div class="cards">
+                <div class="item frete">
+                    <div class="frete-container">
+                        <i class="fa-solid fa-truck"></i>
+                        <h3>Frete grátis</h3>
+                    </div>
+                    <p>Compras acima de R$ 250,00*</p>
+                </div>
+                <div class="item express">
+                    <div class="express-container">
+                        <i class="fa-regular fa-clock"></i>
+                        <h3>24 H</h3>
+                        <h3>Entrega Expressa</h3>
+                    </div>
+                    <p>Em um raio 50km*</p>
+                </div>
+                <div class="item card">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Parcele em até 12x juros</h3>
+                </div>
+                <div class="item app">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Baixe o nosso App e tenha descontos exclusivos</h3>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="banner">
+                <img src="./img/banner.png" alt="">
+                <div class="left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 class="ads">Novidades</h3>
+            <div class="ads">
+
+                <div class="left-ads">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+
+                <div class="ads-un">
+                    <img src="./img/img1.png" alt="">
+                    <p>Conjunto Feminino Blusa e Short Cintura alta - Preto</p>
+                    <p class="price">R$ 72,80</p>
+                </div>
+                <div class="ads-un">
+                    <img src="./img/img2.png" alt="">
+                    <p>Conjunto jacard losangos Feminino - Vermelho</p>
+                    <p class="price">R$ 90,90</p>
+                </div>
+                <div class="ads-un">
+                    <img src="./img/img3.png" alt="">
+                    <p>Conjunto Salvatore Comfy Com Regata e Jogger - Grafite</p>
+                    <p class="price">R$ 99,99</p>
+                </div>
+                <div class="ads-un">
+                    <img src="./img/img4.png" alt="">
+                    <p>Conjunto Salvatore Comfy Com Regata e Jogger - Grafite</p>
+                    <p class="price">R$ 99,90</p>
+                </div>
+                <div class="ads-un">
+                    <img src="./img/img5.png" alt="">
+                    <p>Conjunto Segunda Pele Térmica Proteção Uv 50+ Mvb - Azul</p>
+                    <p class="price">R$ 70,90</p>
+                </div>
+                <div class="ads-un">
+                    <img src="./img/img6.png" alt="">
+                    <p>Kit Moletom e Bermuda De Moletom Preta - Azul</p>
+                    <p class="price">R$ 159,90</p>
+                </div>
+                <div class="right-ads">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2>Dúvidas frequentes</h2>
+            <br>
+            <ul>
+                <li>Acompanhe seu pedido online</li>
+                <li>Cancelamento</li>
+                <li>Entrega</li>
+                <li>Pagamentos</li>
+                <li>Pedidos</li>
+                <li>Promoções e Descontos</li>
+                <li>Trocas e Devoluções</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <h2>Atendimento</h2>
+            <br>
+            <ul>
+                <li>Whatsapp: (019) 9xxxx-xxxx</li>
+                <li>Tel: (019) xxxx-xxxx</li>
+            </ul>
+        </div>
+        <div class="footer bold">
+            <h2>SIGA NOSSAS REDES SOCIAIS</h2>
+            <br>
+            <ul>
+                <li>Facebook: C&MM</li>
+                <li>Instagram: @C&MM</li>
+                <li>Twitter: @C&MM</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/676eccc9ff.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

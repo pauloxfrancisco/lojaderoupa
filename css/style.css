@@ -1,153 +1,397 @@
-*{
+/* Resets gerais */
+
+* {
     padding: 0;
-    margin:0;        
+    margin: 0;
+
 }
-.top{
-    background-color: #FB1C1C;
+
+/* formatações do top-menu */
+
+.top-menu {
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    height: 77px;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.top h2{
-    border:white solid 2px;
-    border-radius:50%;
-    padding: 8px;
-    margin: 10px;
-    text-align: center;
+    background-color: red;
     color: white;
+    height: 77px;
+    margin: 0 auto;
+
+
 }
-.search{
-    align-items: center;
+
+.top-menu h1 {
+    font-size: 38px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 70%;
+    padding: 12px;
+
+}
+
+/* search container */
+.search-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+
+
+}
+
+
+.search-container input {
     border: none;
     font-size: 18px;
-    width: 372px;
-    height: 12px;
+    width: 290px;
+    height: 24px;
+    
 }
-.search input{
-    width: 612px;
-    height: 40px;
 
-}
-.fa-magnifying-glass{
-    color: #ff0000;
+/* search button */
+
+
+.fa-magnifying-glass {
+    color: red;
     margin-left: -30px;
+    font-size: 24px;
+    
+    /* end search button */
 }
 
-.service{
-    font-size: 20px;
+/* service container */
+.service {
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
+}
+/* Headset service icone */
+.fa-headset {
+    font-size: 32px;
+    color: #fff;
+    padding-right: 24px;
+}
+
+/* compre pelo wpp */
+/* wpp icone */
+
+.fa-bands {                      /*N SEI OQ E */
+    font-size: 24px;
+    padding: 20px;
+}
+
+.fa-square-whatsapp{
+    font-size: 32px;
+    padding-right: 24px;
+}
+
+/* Welcome container */
+.welcome {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    padding-left: 42px;
+}
+ 
+
+/* User icon SUB class */
+.fa-circle-user i{
+    font-size: 36px;
+   /*  padding-right: 42px; */
+}
+
+.right-btns {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.right-btns i {
+    font-size: 24px;
+    width: 30px;
+    height: 31px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+/* Shopping icon */
+.fa-circle-user {
+    font-size: 24px;
+}
+
+/* pin container */
+.pin-container {
+    display: flex;
+    padding-top: 14px;
+    padding-left: 14px;
+    align-items: center;
+
+
+}
+
+.pin-container input {
+    border: none;
+    background-color: #fff;
+    font-style: italic;
+}
+
+/* menu */
+.nav-container {
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+    padding: 16px;
 }
 
-.service p{
-    color: white;
-    font-size: 20px;
-    align-items: center;
-    padding: 15px;
-    
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
 }
 
-.welcome{
-    display: flex;
-    align-items: center;
-}
-
-.welcome p{
-    font-size: 20px;
-    color: white;
-    padding: 15px;
-}
-.whats{
-    display: flex;
-    align-items: center;
-    
-}
-.whats p{
-    color: white;
-    font-size: 20px;
-    padding: 15px;
-}
-.fa-headset{
-    font-size: 30px;
-    display: flex;
-    color: white;
-}
-.fa-circle-user{
-    font-size: 34px;
-    color: #fff;
-}
-.fa-heart{
-    font-size: 34px;
-    color: white;
-}
-.fa-bag-shopping{
-    font-size: 34px;
-    color: white;
-}
-.fa-whatsapp{
-    font-size: 30px;
-    color: white
-}
-.fa-regular{
-    padding: 10px;
-}
-.fa-solid{
-    padding: 10px;
-}
-
-.loc{
-    display: flex;
-    align-items: center;
-}
-.nav-container{
-    border: #000000 2px solid;
-    display:flex;
-    align-items: center;
-    justify-content: center; 
-    padding-bottom: 100px;
-}
-.menu{
-    display: flex;
-    padding: 20px 20px;
-    
-}
-.menu ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-.menu li{
-    border: #000000 2px solid;
-    padding: 42px;
-    font-size: 23px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.red-list{
-    font-weight: bold;
-    color: #ff0000;
-}
-.sub-menu{
-    display: flex;
-    
+.menu li {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    padding: 56px;
 
 }
-.notice{
+
+.redList {
+    color: red;
+    text-transform: uppercase;
+}
+
+/* cartões vermelhos */
+.cards {
     display: flex;
-    background-color: #FB1C1C;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.item {
+
     width: 278px;
-    height: 127px;
-    padding: 50px;
+    height: 172px;
+    background: red;
+    color: white;
+    max-width: 278px;
+    padding: 16px;
+    border-radius: 10px;
 }
-.fa-truck-fast{
-    color: #fff;
-    width: 20px;
-    height: 60px;
+
+.item h3 {
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.notice h3{
-    color: #fff;
+
+/* formatação do frete */
+.frete-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+
+}
+
+.frete h3 {
+    text-align: end;
+    font-size: 40px;
+}
+
+.frete p {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 32px;
+}
+
+.fa-truck {
+    font-size: 75px;
+}
+
+/* formatação do express */
+.express {
+    display: inline;
+    align-items: center;
+
+}
+
+.express p {
+    text-align: start;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.express-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 243px;
+    height: 137px;
+}
+
+.fa-clock {
+    padding-top: 14px;
+    font-size: 72px;
+}
+
+/* formatação card */
+.card {
+    text-align: center;
+}
+
+.card h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    margin-top: 16px;
+}
+
+.fa-credit-card {
+    font-size: 64px;
+}
+
+/* formatação app */
+.app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.app h3 {
+    text-align: center;
+}
+
+.fa-mobile-screen {
+    font-size: 72px;
+}
+
+/* formatação banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* setinhas/ arrows */
+
+.left {
+    background: rgba(109, 109, 109, 0.253);
+    width: 16px;
+    padding: 12px;
+    position: absolute;
+    left: 0.5%;
+    bottom: 50%;
+    text-align: center;
+
+}
+
+.right {
+    background: rgba(109, 109, 109, 0.253);
+    width: 16px;
+    padding: 12px;
+    position: absolute;
+    right: 0.5%;
+    bottom: 50%;
+    text-align: center;
+}
+
+/* anuncios */
+
+.ads {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     
+}
+
+.ads h3 {
+    text-align: center;
+   
+}
+
+/* cards */
+.ads-un {
+    max-width: 120px;
+    text-align: center;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+
+.ads-un img {
+    
+    background: rgba(170, 170, 170, 0.322);
+    width: 120px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+
+.left-ads {
+    background: rgba(182, 182, 182, 0.452);
+    width: 16px;
+    padding: 10px;
+    position: absolute;
+    left: 2%;
+    bottom: 50%;
+    text-align: center;
+
+}
+
+.right-ads {
+    background: rgba(182, 182, 182, 0.452);
+    width: 16px;
+    padding: 10px;
+    position: absolute;
+    right: 2%;
+    bottom: 50%;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    display: flex;
+    color: white;
+    background-color: #000;
+    justify-content: space-around;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.footer h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer ul li{
+    padding-top: 16px;
+    list-style: none;
+    color: #717171;
+    
+}
+
+.bold ul li{
+    font-weight: bold;
+    font-size: 18px;
 }
